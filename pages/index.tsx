@@ -70,7 +70,7 @@ const Home: NextPage = () => {
           {/* Description of your NFT Collection */}
           <p className={styles.description}>
             {contractMetadata?.description}<br/><br/>
-            <a href="https://nas.io/web3philippines" target="_blank" className={styles.link}>
+            <a href="https://nas.io/web3philippines" target="_blank" rel="noreferrer" className={styles.link}>
               <b>Already have a community pass?</b>
             </a>
           </p>
