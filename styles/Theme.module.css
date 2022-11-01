@@ -169,6 +169,13 @@
   opacity: 0.25;
 }
 
+.partnerImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 45vw;
+}
+
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 850px) {
   .mintInfoContainer {
@@ -181,6 +188,10 @@
   }
 
   .imageSide {
+    width: 100%;
+  }
+
+  .partnerImageContainer {
     width: 100%;
   }
 }
