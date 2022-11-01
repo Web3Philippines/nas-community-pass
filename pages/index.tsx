@@ -59,10 +59,21 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
         <div className={styles.infoSide}>
+          <img
+            src="/web3phl.png"
+            alt="Web3 Philippines Logo"
+            width={250}
+            className={styles.buttonGapTop}
+          />
           {/* Title of your NFT Collection */}
           <h1>Community Pass (Nas.io)</h1>
           {/* Description of your NFT Collection */}
-          <p className={styles.description}>{contractMetadata?.description}</p>
+          <p className={styles.description}>
+            {contractMetadata?.description}<br/><br/>
+            <a href="https://nas.io/web3philippines" target="_blank" rel="noreferrer" className={styles.link}>
+              <b>Already have a community pass?</b>
+            </a>
+          </p>
         </div>
 
         <div className={styles.imageSide}>
@@ -146,12 +157,23 @@ const Home: NextPage = () => {
         </div>
       </div>
       {/* Powered by thirdweb */}{" "}
-      <img
-        src="/logo.png"
-        alt="thirdweb Logo"
-        width={135}
-        className={styles.buttonGapTop}
-      />
+      <div className={styles.partnerImageContainer}>
+        <img
+          src="/polygon.png"
+          alt="Polygon Logo"
+          width={135}
+        />
+        <img
+          src="/thirdweb.png"
+          alt="thirdweb Logo"
+          width={135}
+        />
+        <img
+          src="/nas.png"
+          alt="Nas.io Logo"
+          width={135}
+        />
+      </div>
     </div>
   );
 };
