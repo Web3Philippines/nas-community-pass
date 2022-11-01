@@ -12,23 +12,26 @@ import { useState } from "react";
 import styles from "../styles/Theme.module.css";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0x322067594DBCE69A9a9711BC393440aA5e3Aaca1";
+const signatureDropAddress = "0xeb628a3f3141c6f6384c2a62d58968f740f16c2a";
 
 const Home: NextPage = () => {
-  const { contract: nftDrop } = useContract(myNftDropContractAddress);
+  const { contract: signatureDrop } = useContract(
+    signatureDropAddress,
+    "signature-drop"
+    );
 
   // The amount the user claims
   const [quantity, setQuantity] = useState(1); // default to 1
 
   // Load contract metadata
-  const { data: contractMetadata } = useContractMetadata(nftDrop);
+  const { data: contractMetadata } = useContractMetadata(signatureDrop);
 
   // Load claimed supply and unclaimed supply
-  const { data: unclaimedSupply } = useUnclaimedNFTSupply(nftDrop);
-  const { data: claimedSupply } = useClaimedNFTSupply(nftDrop);
+  const { data: unclaimedSupply } = useUnclaimedNFTSupply(signatureDrop);
+  const { data: claimedSupply } = useClaimedNFTSupply(signatureDrop);
 
   // Load the active claim condition
-  const { data: activeClaimCondition } = useActiveClaimCondition(nftDrop);
+  const { data: activeClaimCondition } = useActiveClaimCondition(signatureDrop);
 
   // Check if there's NFTs left on the active claim phase
   const isNotReady =
@@ -48,7 +51,7 @@ const Home: NextPage = () => {
   const priceToMint = price.mul(quantity);
 
   // Loading state while we fetch the metadata
-  if (!nftDrop || !contractMetadata) {
+  if (!signatureDrop || !contractMetadata) {
     return <div className={styles.container}>Loading...</div>;
   }
 
@@ -57,7 +60,7 @@ const Home: NextPage = () => {
       <div className={styles.mintInfoContainer}>
         <div className={styles.infoSide}>
           {/* Title of your NFT Collection */}
-          <h1>{contractMetadata?.name}</h1>
+          <h1>Community Pass (Nas.io)</h1>
           {/* Description of your NFT Collection */}
           <p className={styles.description}>{contractMetadata?.description}</p>
         </div>
@@ -106,35 +109,9 @@ const Home: NextPage = () => {
               </div>
             ) : (
               <>
-                <p>Quantity</p>
-                <div className={styles.quantityContainer}>
-                  <button
-                    className={`${styles.quantityControlButton}`}
-                    onClick={() => setQuantity(quantity - 1)}
-                    disabled={quantity <= 1}
-                  >
-                    -
-                  </button>
-
-                  <h4>{quantity}</h4>
-
-                  <button
-                    className={`${styles.quantityControlButton}`}
-                    onClick={() => setQuantity(quantity + 1)}
-                    disabled={
-                      quantity >=
-                      parseInt(
-                        activeClaimCondition?.quantityLimitPerTransaction || "0"
-                      )
-                    }
-                  >
-                    +
-                  </button>
-                </div>
-
                 <div className={styles.mintContainer}>
                   <Web3Button
-                    contractAddress={myNftDropContractAddress}
+                    contractAddress={signatureDropAddress}
                     action={async (contract) =>
                       await contract.erc721.claim(quantity)
                     }

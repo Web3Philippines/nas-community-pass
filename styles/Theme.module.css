@@ -1,5 +1,5 @@
 .container {
-  margin-top: 96px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .previewImage {
-  height: 500px;
+  height: 400px;
   width: 500px;
   border-radius: 16px;
   border: 1px solid var(--border-color);
@@ -22,10 +22,9 @@
   justify-content: center;
   width: 100%;
   padding: 0 24px;
-  min-height: 720px;
-  max-width: 95vw;
+  min-height: 450px;
+  max-width: 90vw;
   gap: 2%;
-  border: 1px solid var(--border-color);
   border-radius: 16px;
 }
 

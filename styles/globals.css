@@ -3,16 +3,16 @@
 /* Change the values in here to match your branding */
 :root {
   /* Background color of the page */
-  --background-color: #1c1e21;
+  --background-color: #080524;
 
   /* Color of the text/words */
   --text-color: #fff;
 
   /* Main color of your brand */
-  --color-primary: #f213a4;
+  --color-primary: #7B3FE4;
 
   /* Secondary color of your brand */
-  --color-secondary: #418dff;
+  --color-secondary: #016EEA;
 
   /* Which font you want to use */
   --font: "Inter", sans-serif;

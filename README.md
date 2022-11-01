@@ -1,56 +1,37 @@
-# Customizable NFT Drop Minting Page
+# Nas.io Community Pass [![created by](https://img.shields.io/badge/created%20by-Web3%20Philippines%20Community-7b3fe4.svg?longCache=true&style=flat-square)](https://web3philippines.org)
 
-In this example, you can create your own NFT Drop minting page just by customising the template with your branding, and plugging in your NFT Drop contract address.
+[![maintained by](https://img.shields.io/badge/maintained%20by-OSS%20Philippines-blue.svg?longCache=true&style=flat-square)](https://ossph.org) [![maintained by](https://img.shields.io/badge/maintained%20by-Wareneutron%20Devs-blue.svg?longCache=true&style=flat-square)](https://wareneutron.com) [![Release](https://img.shields.io/github/release/web3phl/nas-community-pass.svg?style=flat-square)](https://github.com/web3phl/nas-community-pass/releases) [![Star](https://img.shields.io/github/stars/web3phl/nas-community-pass.svg?style=flat-square)](https://github.com/web3phl/nas-community-pass/stargazers) [![License](https://img.shields.io/github/license/web3phl/nas-community-pass.svg?style=flat-square)](https://github.com/web3phl/nas-community-pass/blob/main/LICENSE)
 
-## Tools
+**Nas.io Community Pass** is a unique non-fungible token and non-transferable pass for Web3 Philippines community members to enter the Nas.io community-building platform. Our official partnership with the Nas.io platform. 🤝💜💻
 
-- [**NFT Drop**](https://portal.thirdweb.com/pre-built-contracts/nft-drop): to create a lazy-minted ERC721 NFT Collection that our users can claim.
-- [**React SDK**](https://docs.thirdweb.com/react): to enable users to connect their wallets with the [useMetamask](https://portal.thirdweb.com/react/react.usemetamask) hook, and access hooks such as [useNFTDrop](https://portal.thirdweb.com/react/react.usenftdrop) to interact with the NFT drop contract.
-- [**TypeScript SDK**](https://docs.thirdweb.com/typescript): to view the claimed supply, total supply, and mint NFTs from the drop.
+## 🎯 Contributing
 
-## Using This Repo
+Contributions are welcome, create a pull request to this repo and we will review your code. Please consider to submit your pull request to the `dev` branch. Thank you!
 
-To create your own version of this template, you can use the following steps:
+Read the project's [contributing guide](./CONTRIBUTING.md) for more info.
 
-Run this command from the terminal to clone this project:
+## 💬 Discussions
 
-```bash
-npx thirdweb create --template nft-drop
-```
+For any questions, suggestions, ideas, or simply you want to share your experience in using this project, feel free to share and discuss it to the [community](https://github.com/web3phl/nas-community-pass/discussions)!
 
-### 1. Deploy Your Own NFT Drop on thirdweb
+## 🐛 Issues
 
-Head to the thirdweb dashboard and create your own NFT Drop contract.
+Please report any issues and bugs by [creating a new issue here](https://github.com/web3phl/nas-community-pass/issues/new/choose), also make sure you're reporting an issue that doesn't exist. Any help to improve the project would be appreciated. Thanks! 🙏✨
 
-You can learn how to do that with our guide [Release an NFT drop on your own site without writing any code](https://portal.thirdweb.com/guides/release-an-nft-drop-with-no-code#create-a-drop-contract).
+## 📋 Code of Conduct
 
-Be sure to configure a **name**, **description**, and **image** for your NFT drop in the dashboard.
+Read the project's [code of conduct](./CODE_OF_CONDUCT.md).
 
-### 2. Configure the styles to your branding
+## 📃 License
 
-You can fully customize the colors and style of this template by editing the values in the [`globals.css`](/styles/globals.css) file.
+Nas.io Community Pass is licensed under [GNU General Public License v3.0](https://opensource.org/licenses/GPL-3.0).
 
-You can configure:
+## 📝 Author
 
-- The color of the background with `--background-color`
-- The color of the text with `--text-color`
-- The color of the button (is a gradient from primary to secondary color) with `--color-primary` and `--color-secondary`
-- The font with `--font`
-- The border colors with `--border-color`
+Nas.io Community Pass is developed and maintained by [Web3 Philippines](https://web3philippines.org), [OSS Philippines](https://ossph.org) and [Wareneutron Devs](https://wareneutron.com) with the help of awesome [contributors](https://github.com/web3phl/nas-community-pass/graphs/contributors).
 
-### 3. Plug in your NFT Drop contract address
+[![contributors](https://contrib.rocks/image?repo=web3phl/nas-community-pass)](https://github.com/web3phl/nas-community-pass/graphs/contributors)
 
-Replace the value of the `myNftDropContractAddress` inside [`index.tsx`](/pages/index.tsx) with your NFT Drop contract address you can find in the dashboard.
+---
 
-### 4. Configure Your Network
-
-Inside [`_app.tsx`](/pages/_app.tsx) you can configure the network you want to use:
-
-```jsx
-// This is the chainId your dApp will work on.
-const activeChainId = ChainId.Mumbai;
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+💻💖☕ by [Web3 Philippines](https://web3philippines.org), [OSS Philippines](https://ossph.org), and [Wareneutron Devs](https://wareneutron.com) | He is Awesome 🙏
