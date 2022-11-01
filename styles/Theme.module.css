@@ -176,6 +176,10 @@
   width: 45vw;
 }
 
+.link {
+  color: var(--text-color);
+}
+
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 850px) {
   .mintInfoContainer {
