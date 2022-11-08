@@ -8,7 +8,16 @@ const activeChainId = ChainId.Polygon;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider 
+      desiredChainId={activeChainId}
+      sdkOptions={{
+        gasless: {
+          openzeppelin: {
+            relayerUrl: "https://api.defender.openzeppelin.com/autotasks/3504672d-f64a-4325-a435-95e68921294f/runs/webhook/f59fc7e6-91d8-468f-9e48-aaa2748579b3/GHREZzNatwfDy4inRXqWCA",
+          },
+        },
+      }}
+    >
       <Head>
         <title>Nas.io Community Pass</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

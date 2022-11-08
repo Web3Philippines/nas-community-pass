@@ -37,7 +37,6 @@
 }
 
 .description {
-  opacity: 0.7;
   font-size: 1rem;
 }
 
@@ -180,6 +179,11 @@
   color: var(--text-color);
 }
 
+.notice {
+  font-size: 12px;
+  color: #ffffffce;
+}
+
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 850px) {
   .mintInfoContainer {
@@ -197,5 +201,9 @@
 
   .partnerImageContainer {
     width: 100%;
+    margin-bottom: 25px;
+  }
+  .partnerImageContainer > img {
+    width: 100px;
   }
 }

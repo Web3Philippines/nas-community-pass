@@ -52,37 +52,41 @@ const Home: NextPage = () => {
 
   // Loading state while we fetch the metadata
   if (!signatureDrop || !contractMetadata) {
-    return <div className={styles.container}>Loading...</div>;
+    return <div className={styles.container}>⏳ Loading...</div>;
   }
 
   return (
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
         <div className={styles.infoSide}>
-          <img
-            src="/web3phl.png"
-            alt="Web3 Philippines Logo"
-            width={250}
-            className={styles.buttonGapTop}
-          />
+          <a href="https://web3philippines.org" target="_blank" rel="noreferrer">
+            <img
+              src="/web3phl.png"
+              alt="Web3 Philippines Logo"
+              width={250}
+              className={styles.buttonGapTop}
+            />
+          </a>
           {/* Title of your NFT Collection */}
           <h1>Community Pass (Nas.io)</h1>
           {/* Description of your NFT Collection */}
           <p className={styles.description}>
-            {contractMetadata?.description}<br/><br/>
+            Unique <b>non-fungible token</b> and <b>non-transferable pass</b> for Web3 Philippines community members to enter the Nas.io community-building platform. Our official partnership with the Nas.io platform.<br/><br/>
             <a href="https://nas.io/web3philippines" target="_blank" rel="noreferrer" className={styles.link}>
               <b>Already have a community pass?</b>
-            </a>
+            </a> 🤔
           </p>
         </div>
 
         <div className={styles.imageSide}>
           {/* Image Preview of NFTs */}
-          <img
-            className={styles.image}
-            src={contractMetadata?.image}
-            alt={`${contractMetadata?.name} preview image`}
-          />
+          <a href="https://opensea.io/collection/web3phl-community-pass" target="_blank" rel="noreferrer">
+            <img
+              className={styles.image}
+              src={contractMetadata?.image}
+              alt={`${contractMetadata?.name} preview image`}
+            />
+          </a>
 
           {/* Amount claimed so far */}
           <div className={styles.mintCompletionArea}>
@@ -102,7 +106,7 @@ const Home: NextPage = () => {
                 </p>
               ) : (
                 // Show loading state if we're still loading the supply
-                <p>Loading...</p>
+                <p>⏳ Loading...</p>
               )}
             </div>
           </div>
@@ -112,7 +116,7 @@ const Home: NextPage = () => {
             // Sold out or show the claim button
             isSoldOut ? (
               <div>
-                <h2>Sold Out</h2>
+                <h2>❌ Sold Out</h2>
               </div>
             ) : isNotReady ? (
               <div>
@@ -151,6 +155,10 @@ const Home: NextPage = () => {
                     }`}
                   </Web3Button>
                 </div>
+                <p className={styles.notice}>
+                  You only need one access pass.<br/>
+                  Not tradable and transferrable. ⚠️
+                </p>
               </>
             )
           }
