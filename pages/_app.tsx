@@ -29,6 +29,19 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="keywords"
           content="web3ph, web3phl, minting, nas.io, community, pass"
         />
+        {/* Facebook */}
+        <meta property="og:url" content="https://naspass.web3philippines.org/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Nas.io Community Pass"/>
+        <meta property="og:description" content="Web3 Philippines Minting DApp for Nas.io Community Pass."/>
+        <meta property="og:image" content="/preview.jpg"/>
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="naspass.web3philippines.org"/>
+        <meta property="twitter:url" content="https://naspass.web3philippines.org/"/>
+        <meta name="twitter:title" content="Nas.io Community Pass"/>
+        <meta name="twitter:description" content="Web3 Philippines Minting DApp for Nas.io Community Pass."/>
+        <meta name="twitter:image" content="/preview.jpg"/>
       </Head>
       <Component {...pageProps} />
     </ThirdwebProvider>
