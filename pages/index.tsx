@@ -157,7 +157,7 @@ const Home: NextPage = () => {
                 </div>
                 <p className={styles.notice}>
                   You only need one access pass.<br/>
-                  Not tradable and transferrable. ⚠️
+                  Not tradable and transferable. ⚠️
                 </p>
               </>
             )
