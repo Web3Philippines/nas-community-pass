@@ -72,9 +72,9 @@ const Home: NextPage = () => {
           {/* Description of your NFT Collection */}
           <p className={styles.description}>
             Unique <b>non-fungible token</b> and <b>non-transferable pass</b> for Web3 Philippines community members to enter the Nas.io community-building platform. Our official partnership with the Nas.io platform.<br/><br/>
-            <a href="https://nas.io/web3philippines" target="_blank" rel="noreferrer" className={styles.link}>
-              <b>Already have a community pass?</b>
-            </a> 🤔
+            <a href="https://web3philippines.org/discord" target="_blank" rel="noreferrer" className={styles.link}>
+              <b>Minted one? Join our Discord for the next steps!</b>
+            </a> 🎉
           </p>
         </div>
 
