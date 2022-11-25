@@ -73,8 +73,9 @@ const Home: NextPage = () => {
           <p className={styles.description}>
             Unique <b>non-fungible token</b> and <b>non-transferable pass</b> for Web3 Philippines community members to enter the Nas.io community-building platform. Our official partnership with the Nas.io platform.<br/><br/>
             <a href="https://web3philippines.org/discord" target="_blank" rel="noreferrer" className={styles.link}>
-              <b>Minted one? Join our Discord for the next steps!</b>
-            </a> 🎉
+              <b>Got the Nas Community Pass?</b>
+            </a> 🎫 <br/><br/>
+            Join our Discord and claim your role in <b>#nas-pass</b> channel.
           </p>
         </div>
 
