@@ -75,7 +75,7 @@ const Home: NextPage = () => {
             <a href="https://web3philippines.org/discord" target="_blank" rel="noreferrer" className={styles.link}>
               <b>Got the Nas Community Pass?</b>
             </a> 🎫 <br/><br/>
-            Join our Discord and claim your role in <b>#nas-pass</b> channel.
+            Join our Discord and claim your role in <b>#start-here</b> channel.
           </p>
         </div>
 
