@@ -1,5 +1,7 @@
 # Nas.io Community Pass [![created by](https://img.shields.io/badge/created%20by-Web3%20Philippines%20Community-7b3fe4.svg?longCache=true&style=flat-square)](https://web3philippines.org)
 
+> **Note**: We are closing this project as we are working on a new membership token to be released soon.
+
 [![maintained by](https://img.shields.io/badge/maintained%20by-OSS%20Philippines-blue.svg?longCache=true&style=flat-square)](https://ossph.org) [![maintained by](https://img.shields.io/badge/maintained%20by-Wareneutron%20Devs-blue.svg?longCache=true&style=flat-square)](https://wareneutron.com) [![Release](https://img.shields.io/github/release/web3phl/nas-community-pass.svg?style=flat-square)](https://github.com/web3phl/nas-community-pass/releases) [![Star](https://img.shields.io/github/stars/web3phl/nas-community-pass.svg?style=flat-square)](https://github.com/web3phl/nas-community-pass/stargazers) [![License](https://img.shields.io/github/license/web3phl/nas-community-pass.svg?style=flat-square)](https://github.com/web3phl/nas-community-pass/blob/main/LICENSE)
 
 **Nas.io Community Pass** is a unique non-fungible token and non-transferable pass for Web3 Philippines community members to enter the Nas.io community-building platform. Our official partnership with the Nas.io platform. 🤝💜💻
